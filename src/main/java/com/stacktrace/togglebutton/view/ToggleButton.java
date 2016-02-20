@@ -40,12 +40,13 @@ public class ToggleButton extends View{
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        setMeasuredDimension(mSlideBackground.getWidth(), mSlideBackground.getHeight());
+        setMeasuredDimension(mSwitchBackground.getWidth(), mSwitchBackground.getHeight());
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        canvas.drawBitmap(mSwitchBackground, 0, 0, null);
         canvas.drawBitmap(mSlideBackground, 0, 0, null);
     }
 }

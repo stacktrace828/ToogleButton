@@ -16,6 +16,6 @@ public class MainActivity extends Activity {
         
         mToggleButton.setSlideBackgroundResource(R.drawable.slide_button_background);
         mToggleButton.setSwitchBackgroundResource(R.drawable.switch_background);
-        mToggleButton.setToogleState(ToggleButton.ToggleState.Open);
+        //mToggleButton.setToogleState(ToggleButton.ToggleState.Open);
     }
 }
